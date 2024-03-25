@@ -1,3 +1,4 @@
+/* ESTILOS GENERALES */
 :root {
   --fondo-color: #7c301b;
   --secundario-color: #224b0c;
@@ -33,14 +34,17 @@ ul {
   letter-spacing: 3px;
 }
 
+/* INICIO */
+/* nav */
 .nav-principal {
   display: flex;
   justify-content: center;
   column-gap: 16px;
 }
 
-.hero-header {
-  height: 85vh;
+/* hero */
+.hero-img {
+  height: 75vh;
 }
 
 .img-control {
@@ -50,16 +54,40 @@ ul {
   object-position: center;
 }
 
-.titulo-hero {
-  font-size: 3.5em;
-  letter-spacing: 3px;
+.hero-texto {
   top: 50%;
-  text-shadow: black 0 0 10px;
   transform: translateY(-50%);
   margin: 0;
   padding: 4px;
   left: 10%;
-  text-align: center;
+}
+
+.hero-titulo {
+  font-size: 3.5em;
+  letter-spacing: 4px;
+  text-shadow: black 0 0 10px;
+  margin: 0;
+}
+
+.hero-parrafo {
+  font-size: 1.2em;
+  font-weight: 100;
+  text-shadow: black 0 0 10px;
+  margin: 16px 0 8px 0;
+}
+
+.boton {
+  background-color: var(--secundario-color);
+  border: 1px solid var(--terciario-color);
+  padding: 0;
+}
+
+.boton a {
+  color: white;
+  text-decoration: none;
+  padding: 4px 8px;
+  display: inline-block;
+  margin: 0;
 }
 
 .relative {
