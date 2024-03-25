@@ -6,7 +6,7 @@
   --acento-color: #f0f2b6;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"); */
 
 @font-face {
   font-family: "Albertson";
@@ -14,7 +14,7 @@
 }
 
 body {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   margin: 0;
   background-color: var(--fondo-color);
   color: white;
@@ -71,23 +71,32 @@ ul {
 
 .hero-parrafo {
   font-size: 1.2em;
-  font-weight: 100;
-  text-shadow: black 0 0 10px;
-  margin: 16px 0 8px 0;
+  font-weight: 300;
+  text-shadow: 1px 1px 5px black, 0 0 8px black;
+  margin: 12px 0 8px 0;
 }
 
 .boton {
   background-color: var(--secundario-color);
   border: 1px solid var(--terciario-color);
   padding: 0;
+  font-family: "Lato";
+  border-radius: 5px;
 }
 
 .boton a {
   color: white;
   text-decoration: none;
-  padding: 4px 8px;
+  padding: 8px 12px;
   display: inline-block;
   margin: 0;
+}
+
+.boton a:hover {
+  color: black;
+  background-color: var(--terciario-color);
+  border-color: var(--secundario-color);
+  border-radius: 5px;
 }
 
 .relative {
