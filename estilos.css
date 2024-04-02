@@ -123,6 +123,7 @@ ul {
   font-family: "Albertson";
   text-align: center;
   color: black;
+  text-shadow: whitesmoke 0 0 30px;
 }
 
 /*ESTILOS DE MENU*/
@@ -139,3 +140,30 @@ ul {
   object-fit: cover;
   object-position: center;
 }
+ .chiche-menu h2{
+    font-family: "Albertson";
+    color: black;
+    letter-spacing: 4px;
+    font-size: 3.5em;
+    text-shadow: whitesmoke 0 0 20px;
+    text-align: center;
+  }
+
+  .img-1{
+    border:  #000000 5px solid;
+    margin: 0 20px 10px 5px;
+  }
+  .img-2{
+    border:  #000000 5px solid;
+    margin: 0 20px 10px 5px;
+  }
+
+  .img-3{
+    border:  #000000 5px solid;
+    margin: 0 20px 10px 5px;
+  }
+
+  .img-4{
+    border:  #000000 5px solid;
+    margin: 0 20px 10px 5px;
+  }
