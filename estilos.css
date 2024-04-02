@@ -25,9 +25,14 @@ ul {
 }
 
 .chiche-font {
-  font-family: "Albertson", serif;
-  letter-spacing: 1px;
-}
+    font-family: "Albertson", serif;
+    letter-spacing: 2px;
+    font-size: 25px;
+  }
+
+  .chiche-font a{
+    color: whitesmoke; 
+  }
 
 .tamaño-titulo {
   font-size: 2em;
