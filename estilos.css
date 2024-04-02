@@ -106,3 +106,32 @@ ul {
 .absolute {
   position: absolute;
 }
+ .chiche{
+    border: #f0f2b6 solid;
+    color: black;
+    background-image: url(imagen/fondo.png);
+    margin: 20px 50% 20px 10px;
+    font-size: 150%;
+    border-radius: 5px;
+  }
+  .chiche h1{
+    font-family: "Albertson";
+    text-align: center;
+    color: black;
+  }
+
+
+  /*ESTILOS DE MENU*/
+
+  .summer h1{
+    font-family:"Albertson";
+    font-size: 4em;
+    font-weight: 300;
+    text-shadow: 1px 1px 5px black, 0 0 8px black;
+  }
+  .summer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
