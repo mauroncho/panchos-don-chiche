@@ -25,14 +25,14 @@ ul {
 }
 
 .chiche-font {
-    font-family: "Albertson", serif;
-    letter-spacing: 2px;
-    font-size: 25px;
-  }
+  font-family: "Albertson", serif;
+  letter-spacing: 2px;
+  font-size: 25px;
+}
 
-  .chiche-font a{
-    color: whitesmoke; 
-  }
+.chiche-font a {
+  color: whitesmoke;
+}
 
 .tamaño-titulo {
   font-size: 2em;
@@ -68,14 +68,14 @@ ul {
 }
 
 .hero-titulo {
-  font-size: 3.5em;
+  font-size: 4.5em;
   letter-spacing: 4px;
   text-shadow: black 0 0 10px;
   margin: 0;
 }
 
 .hero-parrafo {
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-weight: 300;
   text-shadow: 1px 1px 5px black, 0 0 8px black;
   margin: 12px 0 8px 0;
@@ -111,32 +111,31 @@ ul {
 .absolute {
   position: absolute;
 }
- .chiche{
-    border: #f0f2b6 solid;
-    color: black;
-    background-image: url(imagen/fondo.png);
-    margin: 20px 50% 20px 10px;
-    font-size: 150%;
-    border-radius: 5px;
-  }
-  .chiche h1{
-    font-family: "Albertson";
-    text-align: center;
-    color: black;
-  }
+.chiche {
+  border: #f0f2b6 solid;
+  color: black;
+  background-image: url(imagen/fondo.png);
+  margin: 20px 50% 20px 10px;
+  font-size: 150%;
+  border-radius: 5px;
+}
+.chiche h1 {
+  font-family: "Albertson";
+  text-align: center;
+  color: black;
+}
 
+/*ESTILOS DE MENU*/
 
-  /*ESTILOS DE MENU*/
-
-  .summer h1{
-    font-family:"Albertson";
-    font-size: 4em;
-    font-weight: 300;
-    text-shadow: 1px 1px 5px black, 0 0 8px black;
-  }
-  .summer img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
+.summer h1 {
+  font-family: "Albertson";
+  font-size: 4em;
+  font-weight: 300;
+  text-shadow: 1px 1px 5px black, 0 0 8px black;
+}
+.summer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
