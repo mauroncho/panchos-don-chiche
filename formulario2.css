@@ -1,0 +1,134 @@
+body {
+    background-color: snow ;
+}
+@font-face {
+    font-family: "Albertson";
+    src: url(Albertson.ttf);
+  }
+.parrafo1 {
+    font-family: "Albertson", serif;
+    font-size: 4em;
+    text-align: center;
+    font-weight: bolder;
+}
+h1 {
+    font-family: "Dancing Script" ;
+    padding: 0;
+    text-align: center;
+    color: rgb(116, 75, 10);
+    font-weight: bolder;
+}
+
+.primer_contenedor {
+    position: relative;
+    margin-left: 30%;
+}
+.segundo_contenedor {
+    position: relative;
+    margin-left: 30%;
+}
+.Tercero_contenedor {
+    font-family:"Poppins";
+    position: relative;
+    margin-left: 30%;
+}
+.cuarto_contenedor{
+    font-family:"Poppins";
+    position: relative;
+    margin-left: 30%;
+}
+.quinto_contenedor {
+    font-family:"Poppins";
+    position: relative;
+    margin-left: 30%;
+    margin-top: 20px;
+}
+.sexto_contenedor {
+    position: relative;
+    margin-left: 40%;
+}
+.Primer_input {
+    width: 300px;
+    height: 30px;
+    font-family:"Poppins";
+    margin-right: 8px;
+    margin-bottom: 5px;
+}
+.Segundo_input {
+    width: 300px;
+    height: 30px;
+    font-family:"Poppins";
+    margin-right: 8px;
+    margin-bottom: 5px;
+}
+.Tercer_input {
+    width: 300px;
+    height: 30px;
+    font-family:"Poppins";
+    margin-right: 8px;
+    margin-bottom: 5px;
+}
+.segundo_parrafo{
+ color: rgb(116, 75, 10);
+ font-weight: bold;
+}
+select {
+    font-family:"Poppins";
+    font-size: 1em;
+}
+.tercer_parrafo {
+    color: rgb(116, 75, 10);
+    font-weight: bold;
+}
+.Primer_a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+}
+button {
+    font-family:"Poppins";
+    margin-top: 30px;
+    width: 200px;
+    height: 50px;
+    background-color:rgb(116, 75, 10) ;
+    color: snow;
+    border: none;
+}
+.septimo_contenedor{
+    font-family:"Poppins";
+    position: relative;
+    margin-left: 40%;
+    margin-top: 20px;
+}
+.Importante {
+    font-family:"Poppins";
+    color:rgb(116, 75, 10) ;
+    position: relative;
+    right: 600px;
+}
+.icono1 {
+    position: relative;
+    right: 600px;
+}
+
+.contenedor_nueve{
+    position: relative;
+    right: 250px;
+    bottom: 200px;
+}
+.ultimo_contenedor {
+    position: relative;
+    right: 630px;
+}
+.Ultimo_parrafo{
+    font-family:"Poppins";
+    color:rgb(116, 75, 10);
+}
+.mapa_contenedor {
+    position: relative;
+    right: 630px;
+}
+iframe {
+    width: 167%;
+    height: 200px;
+}
