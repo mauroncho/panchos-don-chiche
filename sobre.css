@@ -1,0 +1,23 @@
+body {
+    background-color: white;
+}
+.primer_contenedor{
+   position: absolute;    
+    left: 38%;
+}
+.primer_parrafo{
+    text-align: center;
+    font-size: 1.5em;
+    font-family: "Poppins"
+}
+.segundo_contendor{
+    position: absolute;
+    top: 30%;
+    left: 25%;
+}
+.segundo_parrafo{
+    font-family: "Dancing Script";
+    font-size: 1.5em;
+    color: black;
+    font-weight: bolder;
+}
