@@ -132,3 +132,23 @@ iframe {
     width: 167%;
     height: 200px;
 }
+.nav-principal {
+    display: flex;
+    justify-content: center;
+    column-gap: 16px;
+  }
+
+ul {
+    list-style-type: none;
+  }
+  
+  .chiche-font {
+    font-family: "Albertson", serif;
+    letter-spacing: 2px;
+    font-size: 25px;
+  }
+  
+  .chiche-font a {
+    color: rgb(0, 0, 0);
+  }
+  
