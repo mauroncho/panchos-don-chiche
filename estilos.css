@@ -24,6 +24,10 @@ ul {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .chiche-font {
   font-family: "Albertson", serif;
   letter-spacing: 2px;
@@ -45,6 +49,14 @@ ul {
   display: flex;
   justify-content: center;
   column-gap: 16px;
+}
+
+.nav-principal a {
+  transition: all 0.3s;
+}
+
+.nav-principal a:hover {
+  text-decoration: underline;
 }
 
 /* hero */
@@ -114,7 +126,7 @@ ul {
 .chiche {
   border: #f0f2b6 solid;
   color: black;
-  background-image: url(imagen/fondo.png);
+  background-image: url(img/fondo.png);
   margin: 20px 50% 20px 10px;
   font-size: 150%;
   border-radius: 5px;
@@ -140,30 +152,30 @@ ul {
   object-fit: cover;
   object-position: center;
 }
- .chiche-menu h2{
-    font-family: "Albertson";
-    color: black;
-    letter-spacing: 4px;
-    font-size: 3.5em;
-    text-shadow: whitesmoke 0 0 20px;
-    text-align: center;
-  }
+.chiche-menu h2 {
+  font-family: "Albertson";
+  color: black;
+  letter-spacing: 4px;
+  font-size: 3.5em;
+  text-shadow: whitesmoke 0 0 20px;
+  text-align: center;
+}
 
-  .img-1{
-    border:  #000000 5px solid;
-    margin: 0 20px 10px 5px;
-  }
-  .img-2{
-    border:  #000000 5px solid;
-    margin: 0 20px 10px 5px;
-  }
+.img-1 {
+  border: #000000 5px solid;
+  margin: 0 20px 10px 5px;
+}
+.img-2 {
+  border: #000000 5px solid;
+  margin: 0 20px 10px 5px;
+}
 
-  .img-3{
-    border:  #000000 5px solid;
-    margin: 0 20px 10px 5px;
-  }
+.img-3 {
+  border: #000000 5px solid;
+  margin: 0 20px 10px 5px;
+}
 
-  .img-4{
-    border:  #000000 5px solid;
-    margin: 0 20px 10px 5px;
-  }
+.img-4 {
+  border: #000000 5px solid;
+  margin: 0 20px 10px 5px;
+}
