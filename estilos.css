@@ -36,6 +36,11 @@ a {
 
 .chiche-font a {
   color: whitesmoke;
+  padding: 10px;
+  border-radius: 5px;
+}
+.chiche-font a:hover{
+  background-color: rgb(143, 130, 130);
 }
 
 .tamaño-titulo {
@@ -49,6 +54,7 @@ a {
   display: flex;
   justify-content: center;
   column-gap: 16px;
+
 }
 
 .nav-principal a {
@@ -140,41 +146,181 @@ a {
 }
 
 /*ESTILOS DE MENU*/
-
+.summer{
+  background-image: url(Imagenes_menu/summer.jpg);
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+}
 .summer h1 {
+  margin: 7% 0 0 20%;
   font-family: "Albertson";
-  font-size: 4em;
+  font-size: 8em;
   font-weight: 300;
-  text-shadow: 1px 1px 5px black, 0 0 8px black;
+  text-shadow: 10px 10px 20px #000000;
 }
-.summer img {
-  width: 100%;
-  height: 100%;
-}
-.chiche-menu h2 {
+
+.chiche-menu h2{
   font-family: "Albertson";
-  color: black;
+  color: whitesmoke;
   letter-spacing: 4px;
   font-size: 3.5em;
-  text-shadow: whitesmoke 0 0 20px;
   text-align: center;
+  text-shadow: 10px 10px 5px black;
 }
 
-.img-1 {
-  border: #000000 5px solid;
-  margin: 0 20px 10px 5px;
-}
-.img-2 {
-  border: #000000 5px solid;
-  margin: 0 20px 10px 5px;
+.imagenes-bloque1{
+  display: flex;
+  justify-content: space-around;
 }
 
-.img-3 {
-  border: #000000 5px solid;
-  margin: 0 20px 10px 5px;
+.imagenes-bloque2{
+  display: flex;
+  justify-content: space-around;
 }
 
-.img-4 {
+.imagenes-bloque3{
+  display: flex;
+  justify-content: space-around;
+}
+
+.imagenes-bloque4{
+  display: flex;
+  justify-content: space-around;
+}
+
+.img-1{
+  border:  #000000 5px solid;
+  transition: 1s;
+  }
+
+.img-1:hover{
+  transform: scale(1.1);
+  box-shadow: #000000 20px 20px 30px;
+}
+
+.img-2{
+  border:  #000000 5px solid;
+  transition: 1s;
+  }
+
+.img-2:hover{
+    transform: scale(1.1);
+    box-shadow: #000000 20px 20px 30px;
+  }
+
+.img-3{
+  border:  #000000 5px solid;
+  transition: 1s;
+  }
+
+.img-3:hover{
+    transform: scale(1.1);
+    box-shadow: #000000 20px 20px 30px;
+  }
+
+.img-4{
+    border:  #000000 5px solid;
+    margin-top: 2%;
+    transition: 1s;
+  }
+
+.img-4:hover{
+    transform: scale(1.1);
+    box-shadow: #000000 20px 20px 30px;
+  }
+
+.img-5{
+    border:  #000000 5px solid;
+    margin-top: 2%;
+    transition: 1s;
+    }
+
+ .img-5:hover{
+      transform: scale(1.1);
+      box-shadow: #000000 20px 20px 30px;
+    }
+
+.img-6{
+    border:  #000000 5px solid;
+    margin-top: 2%;
+    transition: 1s;
+    }
+
+.img-6:hover{
+      transform: scale(1.1);
+      box-shadow: #000000 20px 20px 30px;
+    }
+
+.img-7{
   border: #000000 5px solid;
-  margin: 0 20px 10px 5px;
+  transition: 1s;
+}
+
+.img-7:hover{
+  transform: scale(1.1);
+  box-shadow: #000000 20px 20px 30px;
+}
+
+.img-8{
+  border: #000000 5px solid;
+  transition: 1s;
+}
+
+.img-8:hover{
+  transform: scale(1.1);
+  box-shadow: #000000 20px 20px 30px;
+}
+
+.img-9{
+  border: #000000 5px solid;
+  margin-bottom: 5%;
+  transition: 1s;
+}
+
+.img-9:hover{
+  transform: scale(1.1);
+  box-shadow: #000000 20px 20px 30px;
+}
+
+.img-10{
+  border: #000000 5px solid;
+  margin-bottom: 5%;
+  transition: 1s;
+}
+
+.img-10:hover{
+  transform: scale(1.1);
+  box-shadow: #000000 20px 20px 30px;
+}
+
+.img-11{
+  border: #000000 5px solid;
+  margin-bottom: 5%;
+  transition: 1s;
+}
+
+.img-11:hover{
+  transform: scale(1.1);
+  box-shadow: #000000 20px 20px 30px;
+}
+
+.extra{
+  color: whitesmoke;
+  text-align: center;
+  text-shadow: 10px 10px 5px black;
+  font-family: "Albertson";
+  font-size: 3.5em;
+  letter-spacing: 4px;
+}
+.Bebidas{
+  color: whitesmoke;
+  text-align: center;
+  font-family: "Albertson";
+  font-size: 3.5em;
+  letter-spacing: 4px;
+  text-shadow: #000000 10px 10px 5px;
 }
