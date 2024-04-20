@@ -22,6 +22,7 @@ body {
 
 ul {
   list-style-type: none;
+  padding: 0;
 }
 
 a {
@@ -33,15 +34,6 @@ a {
   letter-spacing: 2px;
   font-size: 25px;
 }
-
-/* .chiche-font a {
-  color: whitesmoke;
-  padding: 10px;
-  border-radius: 5px;
-}
-.chiche-font a:hover{
-  background-color: rgb(143, 130, 130);
-} */
 
 .tamaño-titulo {
   font-size: 2em;
@@ -395,4 +387,30 @@ a {
     width: 100%;
     margin-bottom: 30px;
   }
+}
+
+/* SOBRE NOSOTROS */
+.sobre-nosotros-header {
+  text-align: center;
+  margin: 2em auto;
+}
+
+.sobre-nosotros-titulo {
+  text-shadow: black 0 0 5px;
+  letter-spacing: 4px;
+  font-size: 3em;
+}
+
+.sobre-nosotros-main {
+  background-color: var(--secundario-color);
+  border-radius: 10px;
+  border: 1px var(--acento-color) solid;
+  max-width: 680px;
+  margin: 2em auto;
+}
+.sobre-nosotros-parrafo {
+  text-align: center;
+
+  margin: 1em auto;
+  padding: 1em;
 }
