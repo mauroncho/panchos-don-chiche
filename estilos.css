@@ -173,7 +173,7 @@ a {
   text-shadow: 10px 10px 5px black;
 }
 
-.imagenes-bloque1 {
+.imagenes-bloque{
   display: flex;
   justify-content: space-around;
   margin-top: 10px;
