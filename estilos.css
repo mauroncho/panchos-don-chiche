@@ -175,18 +175,22 @@ a {
 
 .imagenes-bloque {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: space-evenly;
   margin-top: 10px;
 }
 
 .img-menu {
   border: #000000 5px solid;
-  transition: 1s;
+  transition: 0.4s;
+  width: 500px;
+  height: 600px;
 }
 
 .img-menu:hover {
-  transform: scale(1.1);
-  box-shadow: #000000 20px 20px 30px;
+  transform: scale(1.02);
+  box-shadow: #000000 10px 10px 20px;
 }
 
 .extra {
