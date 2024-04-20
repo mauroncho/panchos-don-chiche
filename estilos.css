@@ -22,6 +22,7 @@ body {
 
 ul {
   list-style-type: none;
+  padding: 0;
 }
 
 a {
@@ -32,15 +33,6 @@ a {
   font-family: "Albertson", serif;
   letter-spacing: 2px;
   font-size: 25px;
-}
-
-.chiche-font a {
-  color: whitesmoke;
-  padding: 10px;
-  border-radius: 5px;
-}
-.chiche-font a:hover{
-  background-color: rgb(143, 130, 130);
 }
 
 .tamaño-titulo {
@@ -54,15 +46,18 @@ a {
   display: flex;
   justify-content: center;
   column-gap: 16px;
-
 }
 
 .nav-principal a {
-  transition: all 0.3s;
+  transition: all 0.4s;
+  color: whitesmoke;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .nav-principal a:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  background-color: var(--secundario-color);
 }
 
 /* hero */
@@ -129,24 +124,30 @@ a {
 .absolute {
   position: absolute;
 }
-.chiche {
-  border: #f0f2b6 solid;
-  color: black;
-  background-image: url(img/fondo.png);
-  background-image: url(img/fondo.png);
-  margin: 20px 50% 20px 10px;
-  font-size: 150%;
+
+.data-chiche {
+  border: var(--acento-color) 1px solid;
+  color: white;
+  background-color: var(--secundario-color);
+  margin: 16px auto;
   border-radius: 5px;
+  max-width: 720px;
 }
-.chiche h1 {
-  font-family: "Albertson";
+
+.data-chiche h1 {
   text-align: center;
-  color: black;
-  text-shadow: whitesmoke 0 0 30px;
+  font-size: 2.5em;
+  text-shadow: black 0 0 5px;
+  letter-spacing: 4px;
+}
+
+.data-chiche p {
+  padding: 0.3em 2em;
+  text-align: center;
 }
 
 /*ESTILOS DE MENU*/
-.summer{
+.summer {
   background-image: url(Imagenes_menu/summer.jpg);
   background-size: cover;
   height: 500px;
@@ -163,7 +164,7 @@ a {
   text-shadow: 10px 10px 20px #000000;
 }
 
-.chiche-menu h2{
+.chiche-menu h2 {
   font-family: "Albertson";
   color: whitesmoke;
   letter-spacing: 4px;
@@ -172,7 +173,7 @@ a {
   text-shadow: 10px 10px 5px black;
 }
 
-.imagenes-bloque1{
+.imagenes-bloque1 {
   display: flex;
   justify-content: space-around;
   margin-top: 10px;
@@ -189,7 +190,7 @@ a {
 }
 
 
-.extra{
+.extra {
   color: whitesmoke;
   text-align: center;
   text-shadow: 10px 10px 5px black;
@@ -197,7 +198,7 @@ a {
   font-size: 3.5em;
   letter-spacing: 4px;
 }
-.Bebidas{
+.Bebidas {
   color: whitesmoke;
   text-align: center;
   font-family: "Albertson";
@@ -212,63 +213,86 @@ a {
     padding: 80px 0;
     
 }
-.footer-row{
-    display: flex;
-    flex-wrap: wrap;
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
 }
-.footer-links{
-    width: 25%;
-    padding: 0 15px;
+.footer-links {
+  width: 25%;
+  padding: 0 15px;
 }
-.footer-links h4{
-    font-size:  20px;
-    color: #ffffff;
-    margin-bottom: 25px;
-    font-weight: 500;
-    border-bottom: 2px solid #f0f2b6;
-    padding-bottom: 10PX;
-    display: inline-block;
-   
+.footer-links h4 {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 25px;
+  font-weight: 500;
+  border-bottom: 2px solid #f0f2b6;
+  padding-bottom: 10px;
+  display: inline-block;
 }
-.footer-links ul li a{
-    font-size:  18px;
-    text-decoration: none;
-    color:  #ffffff;
-    display: block;
-    margin-bottom: 15px;
-    transition: all .3s ease;
-    
+.footer-links ul li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
 }
-.cont{
-    max-width: 1200px;
-    margin: 0 auto;
+.cont {
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.footer-links ul li a:hover{
-    color: #ffffff;
-    padding-left: 6px;
-    
+.footer-links ul li a:hover {
+  color: #ffffff;
+  padding-left: 6px;
 }
-.social-link a{
-    display: inline-block;
-    min-height: 40px;
-    width: 40px;
-    background-color: rgba(255, 255, 255,0.2);
-    margin: 0 10px 10px 0;
+.social-link a {
+  display: inline-block;
+  min-height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.social-link a:hover {
+  background-color: salmon;
+}
+@media (max-width: 991px) {
+  .footer-row {
     text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    color: #ffffff;
-    transition: all .5s ease;
+  }
+  .footer-links {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
-.social-link a:hover{
-    background-color: salmon;
+
+/* SOBRE NOSOTROS */
+.sobre-nosotros-header {
+  text-align: center;
+  margin: 2em auto;
 }
-@media(max-width:991px){
-    .footer-row{
-        text-align:center;
-    }
-    .footer-links{
-        width: 100%;
-        margin-bottom: 30px;
-    }
+
+.sobre-nosotros-titulo {
+  text-shadow: black 0 0 5px;
+  letter-spacing: 4px;
+  font-size: 3em;
+}
+
+.sobre-nosotros-main {
+  background-color: var(--secundario-color);
+  border-radius: 10px;
+  border: 1px var(--acento-color) solid;
+  max-width: 680px;
+  margin: 2em auto;
+}
+.sobre-nosotros-parrafo {
+  text-align: center;
+
+  margin: 1em auto;
+  padding: 1em;
 }
