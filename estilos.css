@@ -300,6 +300,7 @@ a {
   margin: 1em auto;
   padding: 1em;
 }
+/* CONTACTO */
 .contactanos{
     text-align: center;
     font-family: "Albertson";
@@ -309,17 +310,17 @@ a {
 .h2_subtitulo {
     text-align: center;
     font-family: "Dancing Script";
-    color: rgb(116, 75, 10);
+    color: snow;
     font-size: 2em;
 }
 .h3_escuchaste {
-  color: rgb(116, 75, 10);
+  color: snow;
   font-size: 1em;
   font-family: "Poppins";
   text-align: center;
 }
 .h4_consulta{
-  color: rgb(116, 75, 10);
+  color: snow;
   font-size: 1em;
   font-family: "Poppins";
   text-align: center;
