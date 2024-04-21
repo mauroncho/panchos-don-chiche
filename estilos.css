@@ -300,3 +300,58 @@ a {
   margin: 1em auto;
   padding: 1em;
 }
+.contactanos{
+    text-align: center;
+    font-family: "Albertson";
+    font-size: 3em;
+    font-weight: bolder;
+}
+.h2_subtitulo {
+    text-align: center;
+    font-family: "Dancing Script";
+    color: rgb(116, 75, 10);
+    font-size: 2em;
+}
+.h3_escuchaste {
+  color: rgb(116, 75, 10);
+  font-size: 1em;
+  font-family: "Poppins";
+  text-align: center;
+}
+.h4_consulta{
+  color: rgb(116, 75, 10);
+  font-size: 1em;
+  font-family: "Poppins";
+  text-align: center;
+}
+.formulario {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  align-content: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+input {
+  font-family: "Poppins";
+}
+select {
+  font-family: "Poppins";
+  width: 100px;
+}
+label {
+  font-family: "Poppins";
+}
+.preguntas{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: center;
+}
+.opciones{
+  display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: center;
+   margin-bottom: 10px;
+}
