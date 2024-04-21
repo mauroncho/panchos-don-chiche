@@ -16,8 +16,9 @@
 body {
   font-family: "Lato", sans-serif;
   margin: 0;
-  background-color: var(--fondo-color);
+  /*background-color: var(--fondo-color);*/
   color: white;
+ background-color: #7c301b;
 }
 
 ul {
@@ -213,8 +214,8 @@ a {
 /*FOOTER*/
 .footer {
   margin-top: 2em;
-  background-color: #7c4030;
   padding: 2em 0;
+ background-color: #8f402a;
 }
 .footer-row {
   display: flex;
@@ -246,8 +247,8 @@ a {
   margin: 0 auto;
 }
 .footer-links ul li a:hover {
-  color: #ffffff;
   padding-left: 6px;
+  background-color: var(--secundario-color);
 }
 .social-link a {
   display: inline-block;
@@ -262,7 +263,7 @@ a {
   transition: all 0.5s ease;
 }
 .social-link a:hover {
-  background-color: salmon;
+  background-color: var(--secundario-color);
 }
 @media (max-width: 991px) {
   .footer-row {
