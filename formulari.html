@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactanos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="./formulario2.css">
+    <link rel="stylesheet" href="./estilos.css">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
 rel="stylesheet">
@@ -30,74 +30,91 @@ rel="stylesheet">
           <a href="sobrenosotros.html"><li>Nosotros</li></a>
         </ul>
       </nav>
-    <div class="banner">
-        <p class="parrafo1">CONTACTANOS!</p>
-    </div>
-<h1> Contacta con nosotros y habla con Don Chiche </h1>
-<form action="#" method="post">
-    <div class="primer_contenedor">              
-    <label for="Nombre" hidden>Nombre</label>
-     <input class="Primer_input"  type="text" name="Nombre" id="Nombre" placeholder="Ingrese su nombre aqui..." required>
+ <h1>CONTACTANOS!</h1>
+    <h2>Contacta con nosotros y habla con Don Chiche</h2>
+        <form action="" method="post">
+<div class="formulario">
+<label for="Nombre" hidden>Nombre</label>
+<input type="text" name="Nombre" id="Nombre"placeholder="Ingrese su nombre aqui... " style="margin: 10px;  width: 400px; height: 30px;">
 
 <label for="Apellido" hidden>Apellido</label>
-<input class="Primer_input"  type="text" name="Apellido" id="Apellido" placeholder="Ingrese su apellido aqui..." required>
-</div>  
-<br>
-<div class="segundo_contenedor">
-<label for="Email" hidden>Email</label>
-<input class="Segundo_input" type="text" name="Email" id="Email" placeholder="Email" required>
+<input type="text" name="Apellido" id="Apellido"
+ placeholder="Ingrese su Apellido aqui..." style="margin: 10px;  width: 400px; height: 30px;">
 
-<label for="Telefono" hidden>Telefono</label>
-<input class="Segundo_input" type="text" name="Telefono" id="Telefono" placeholder="Telefono" required>
 
-</div>
-<div class="septimo_contenedor">
-    <label for="Codigo" hidden>Codigo Postal</label>
-    <input  class="Segundo_input" type="text" name="Codigo" id="Codigo" placeholder="Codigo Postal" required>
+<label for="email" hidden>email</label>
+<input type="email" name="email" id="email"
+placeholder="Ingrese su email aqui..." style="margin: 10px; width: 400px; height: 30px;">
+<label for="Codigo Postal" hidden>Codigo Postal</label>
+<input type="text" name="Codigo Postal" id="Codigo Postal"
+placeholder="Codigo Postal" style="margin: 10px; width: 400px; height: 30px;" >
 
 </div>
 
-<div class="Tercero_contenedor"> 
-    <p class="segundo_parrafo">¿Donde escuchaste de nosotros?</p>
-<label for="">Amigos/familia</label>
-<input  type="radio" name="Escuchar" id="Amigos/familia">
+<h3>¿Donde escuchaste de nosotros?</h3>
 
-<label for="">Redes Sociales</label>
-<input type="radio" name="Escuchar" id="Redes Sociales">
+<div class="preguntas">
+<label for="amigos">Amigos/familia</label>
+<input type="radio" name="amigos" id="amigos">
 
-<label for="">Busqueda</label>
-<input type="radio" name="Escuchar" id="Busqueda">
+<label for="Redes">Redes Sociales</label>
+<input type="radio" name="amigos" id="amigos">
 
-<label for="">Otros</label>
-<input type="radio" name="Escuchar" id="Otros">
+<label for="Busqueda">Busqueda</label>
+<input type="radio" name="amigos" id="amigos">
+
+<label for="otros">Otros</label>
+<input type="radio" name="amigos" id="amigos">
+
 </div>
+<h4> ¿Cual es el motivo de la consulta?</h4>
 
-<div class="cuarto_contenedor">
-    <p class="tercer_parrafo">¿Cual es el motivo de la consulta?</p>
-    <select name="Consulta" id="Consulta">
-        <option value="1">Selecciona</option>
-        <option value="2">Devoluciones</option>
-        <option value="3">Canjes</option>
-        <option value="4">Curriculum</option>
-        <option value="5">Promociones</option>
+<div class="opciones">
+<select name="consulta" id="consulta">
 
-    </select>
+<option value="1">Selecciona</option>
+
+<option value="2">Devolucion</option>
+
+<option value="3">Canjes</option>
+
+<option value="4">Promociones</option>
+</select>
 </div>
-<div class="quinto_contenedor">
-    <label for="politica" hidden> Politica</label>
-  <input type="checkbox" name="politica" id="politica">
- <label for="Politica">Conozco y acepto las  <a  class="Primer_a"  href="https://policies.google.com/privacy?hl=es">Politica de privacidad</a></label>
-</div>
-<div class="sexto_contenedor">
- <button type="submit">Enviar Formulario</button>
 </form>
-<div class="ultimo_contenedor">
-<h2 class="Ultimo_parrafo">¿Donde encontarnos?</h2>
-</div>
-<div class="mapa_contenedor">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26281.72940112887!2d-58.441615046906875!3d-34.5733962828471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59c771eb933%3A0x6b3113b596d78c69!2sPalermo%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1712274588384!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
-referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
+    <footer class="footer">
+    <div class="cont">
+      <div class="footer-row">
+        <div class="footer-links">
+          <h4>Panchos Don Chiche</h4>
+          <ul>
+            <li>
+              <a href="index.html"><li>Inicio</li></a>
+            </li>
+            <li>
+              <a href="menu.html"><li>Menu</li></a>
+            </li>
+            <li>
+              <a href="formulari.html"><li>Contacto</li></a>
+            </li>
+            <li>
+              <a href="sobrenosotros.html"><li>Nosotros</li></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Siguenos</h4>
+          <div class="social-link">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <p>©2024 PANCHOSDONCHICHE, Todos los derechos reservados</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html> 
 </body>
