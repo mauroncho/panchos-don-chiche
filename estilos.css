@@ -16,18 +16,25 @@
 body {
   font-family: "Lato", sans-serif;
   margin: 0;
+  padding: 0;
   /*background-color: var(--fondo-color);*/
   color: white;
- background-color: #7c301b;
+  background-color: #7c301b;
 }
 
 ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 a {
   text-decoration: none;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
 }
 
 .chiche-font {
@@ -47,6 +54,12 @@ a {
   display: flex;
   justify-content: center;
   column-gap: 16px;
+  background: #8a361e;
+  padding: 0.5em 0;
+}
+
+.nav-toggle {
+  display: none;
 }
 
 .nav-principal a {
@@ -133,6 +146,8 @@ a {
   margin: 16px auto;
   border-radius: 5px;
   max-width: 720px;
+  padding: 0.5em;
+  margin: 1em auto;
 }
 
 .data-chiche h1 {
@@ -215,7 +230,7 @@ a {
 .footer {
   margin-top: 2em;
   padding: 2em 0;
- background-color: #8f402a;
+  background-color: #8a361e;
 }
 .footer-row {
   display: flex;
@@ -275,10 +290,47 @@ a {
   }
 }
 
+@media (width < 768px) {
+  .nav-toggle {
+    display: block;
+    aspect-ratio: 1;
+    width: 45px;
+    position: fixed;
+    z-index: 100;
+    background: #0e0e0ebb;
+    top: 4%;
+    right: 3%;
+    border-radius: 10px;
+  }
+
+  .nav-principal {
+    position: fixed;
+    right: 0;
+    flex-direction: column;
+    align-items: end;
+    column-gap: 16px;
+    background: #0e0e0ebb;
+    padding: 4em 0 1em 0;
+    min-width: 35%;
+    z-index: 50;
+    transition: transform 350ms ease-in-out;
+    /* transform: translateX(100%); */
+  }
+
+  /* .nav-principal a {
+    width: 90%;
+  } */
+
+  .nav-principal[data-visible="true"] {
+    transform: translateX(100%);
+  }
+}
+
 /* SOBRE NOSOTROS */
 .sobre-nosotros-header {
   text-align: center;
-  margin: 2em auto;
+  margin: 0 auto;
+  padding: 1em;
 }
 
 .sobre-nosotros-titulo {
@@ -301,17 +353,21 @@ a {
   padding: 1em;
 }
 /* CONTACTO */
-.contactanos{
-    text-align: center;
-    font-family: "Albertson";
-    font-size: 3em;
-    font-weight: bolder;
+.contacto-main {
+  padding: 1.5em 1em 0 1em;
+}
+
+.contactanos {
+  text-align: center;
+  font-family: "Albertson";
+  font-size: 3em;
+  font-weight: bolder;
 }
 .h2_subtitulo {
-    text-align: center;
-    font-family: "Dancing Script";
-    color: snow;
-    font-size: 2em;
+  text-align: center;
+  font-family: "Dancing Script";
+  color: snow;
+  font-size: 2em;
 }
 .h3_escuchaste {
   color: snow;
@@ -319,7 +375,7 @@ a {
   font-family: "Poppins";
   text-align: center;
 }
-.h4_consulta{
+.h4_consulta {
   color: snow;
   font-size: 1em;
   font-family: "Poppins";
@@ -343,16 +399,16 @@ select {
 label {
   font-family: "Poppins";
 }
-.preguntas{
-   display: flex;
-   flex-direction: row;
-   flex-wrap: nowrap;
-   justify-content: center;
-}
-.opciones{
+.preguntas {
   display: flex;
-   flex-direction: row;
-   flex-wrap: nowrap;
-   justify-content: center;
-   margin-bottom: 10px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.opciones {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-bottom: 10px;
 }

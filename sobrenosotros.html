@@ -25,8 +25,19 @@
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
   </head>
   <body>
+    <button
+      class="nav-toggle"
+      aria-controls="nav-principal"
+      aria-expanded="false"
+    >
+      <i class="fa-solid fa-bars fa-2xl" style="color: #ffffff"></i>
+    </button>
     <nav>
-      <ul class="nav-principal chiche-font">
+      <ul
+        id="nav-principal"
+        class="nav-principal chiche-font"
+        data-visible="false"
+      >
         <a href="index.html"><li>Inicio</li></a>
         <a href="menu.html"><li>Menu</li></a>
         <a href="contacto.html"><li>Contacto</li></a>
@@ -35,7 +46,8 @@
     </nav>
     <header class="sobre-nosotros-header">
       <h1 class="chiche-font tamaño-titulo sobre-nosotros-titulo">
-        Sobre Nosotros
+        Sobre <br />
+        Nosotros
       </h1>
       <div class="primer_contenedor">
         <img
@@ -101,5 +113,6 @@
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

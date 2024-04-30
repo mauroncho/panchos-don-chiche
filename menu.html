@@ -22,8 +22,19 @@
     />
   </head>
   <body>
+    <button
+      class="nav-toggle"
+      aria-controls="nav-principal"
+      aria-expanded="false"
+    >
+      <i class="fa-solid fa-bars fa-2xl" style="color: #ffffff"></i>
+    </button>
     <nav>
-      <ul class="nav-principal chiche-font">
+      <ul
+        id="nav-principal"
+        class="nav-principal chiche-font"
+        data-visible="false"
+      >
         <a href="index.html"><li>Inicio</li></a>
         <a href="menu.html"><li>Menu</li></a>
         <a href="contacto.html"><li>Contacto</li></a>
@@ -88,7 +99,9 @@
             <h4>Siguenos</h4>
             <div class="social-link">
               <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="https://www.instagram.com/?theme=dark"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.instagram.com/?theme=dark"
+                ><i class="fab fa-instagram"></i
+              ></a>
               <a href="#"><i class="fab fa-twitter"></i></a>
               <a href="#"><i class="fab fa-linkedin"></i></a>
               <p>©2024 PANCHOSDONCHICHE, Todos los derechos reservados</p>
@@ -97,5 +110,6 @@
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
