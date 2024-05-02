@@ -20,6 +20,7 @@ rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+<script src="script.js"></script>
 </head>
 <body>
   <button
@@ -44,10 +45,11 @@ rel="stylesheet">
 <main class="contacto-main">
  <h1 class="contactanos">CONTACTANOS!</h1>
     <h2 class="h2_subtitulo">Contacta con nosotros y habla con Don Chiche</h2>
-        <form action="" method="post">
+        <form action="" method="post" id="form">
 <div class="formulario">
 <label for="Nombre" hidden>Nombre</label>
 <input type="text" name="Nombre" id="Nombre"placeholder="Ingrese su nombre aqui... " style="margin: 10px;  width: 400px; height: 30px;">
+<span id="ErrorNombre" class="Error"></span>
 
 <label for="Apellido" hidden>Apellido</label>
 <input type="text" name="Apellido" id="Apellido"
@@ -92,7 +94,7 @@ placeholder="Codigo Postal" style="margin: 10px; width: 400px; height: 30px;" >
 
 <option value="4">Promociones</option>
 </select>
-<button>Enviar</button>
+<button type="submit">Enviar</button>
 </div>
 </form>
 </main>
@@ -109,7 +111,7 @@ placeholder="Codigo Postal" style="margin: 10px; width: 400px; height: 30px;" >
               <a href="menu.html"><li>Menu</li></a>
             </li>
             <li>
-              <a href="formulari.html"><li>Contacto</li></a>
+              <a href="contacto.html"><li>Contacto</li></a>
             </li>
             <li>
               <a href="sobrenosotros.html"><li>Nosotros</li></a>
@@ -130,7 +132,6 @@ placeholder="Codigo Postal" style="margin: 10px; width: 400px; height: 30px;" >
     </div>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html> 
 </body>
