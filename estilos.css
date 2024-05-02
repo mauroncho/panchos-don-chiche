@@ -20,6 +20,7 @@ body {
   /*background-color: var(--fondo-color);*/
   color: white;
   background-color: #7c301b;
+  /* overflow-x: hidden; */
 }
 
 ul {
