@@ -1,6 +1,8 @@
-/*const navToggle = document.querySelector(".nav-toggle");
+//interaccion del menu en mobile
+//recupero los elementos del dom
+const navToggle = document.querySelector(".nav-toggle");
 const navMenu = document.getElementById("nav-principal");
-
+//cambio atributos cuando el usuario hace click
 navToggle.addEventListener("click", () => {
   const visibility = navMenu.getAttribute("data-visible");
   if (visibility === "false") {
@@ -10,10 +12,7 @@ navToggle.addEventListener("click", () => {
     navMenu.setAttribute("data-visible", false);
     navToggle.setAttribute("aria-expanded", false);
   }
-  console.log(visibility);
 });
-console.log("hello");*/
-
 
 //formulario
 /*const ValorNombre = document.getElementById("Nombre")
