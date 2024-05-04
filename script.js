@@ -2,6 +2,7 @@
 //recupero los elementos del dom
 const navToggle = document.querySelector(".nav-toggle");
 const navMenu = document.getElementById("nav-principal");
+console.log(navToggle);
 //cambio atributos cuando el usuario hace click
 navToggle.addEventListener("click", () => {
   const visibility = navMenu.getAttribute("data-visible");
