@@ -15,18 +15,52 @@ navToggle.addEventListener("click", () => {
   }
 });
 
-//formulario
-/*const ValorNombre = document.getElementById("Nombre")
-const ErrorNombre = document.getElementById("ErrorNombre")
-const valido = true;
+//validacion de formulario
 
-document.getElementById("form"),addEventListener("submit", function(event) {
-  event.preventDefault();
+
+let Validacion = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/
+let ValidacionEmail= /^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$/
+let ValidacionCodigoPostal = /^[0-9]+$/
+
+
+const Formulario = document.getElementById('form')
+const nombre = document.getElementById('Nombre')
+const apellido = document.getElementById ('Apellido')
+const email = document.getElementById('email')
+const CodigoPostal = document.getElementById('Codigo Postal')
+
+
+Formulario.addEventListener('submit', (e) =>{
+
+  e.preventDefault();
+
+ if (!Validacion.test(nombre.value) || !nombre.value.trim()){
+  console.log('formato no valido')
+  alert('error en el nombre')
+  return
+ }
+
+if(!Validacion.test(apellido.value) || !apellido.value.trim()){
+  console.log('formato no valido')
+  alert('error en el apellido')
+  return
+}
+
+  if(!ValidacionEmail.test(email.value) || !email.value.trim()){
+    console.log('Formato no valido')
+    alert('mail no valido')
+    return
+  }
+
+  if(!ValidacionCodigoPostal.test(CodigoPostal.value) || !CodigoPostal.value.trim()){
+    console.log('Formato no valido')
+    alert('codigo postal incorrecto')
+    return
+  }
+
+  console.log('Formulario Enviado')
+  alert('Formulario Enviado')
 })
 
-// Validación de nombre
-if (ValorNombre === "") {
-  ErrorNombre.innerHTML = "Por favor ingresa tu nombre";
-  valido = false;
-} else {
-}*/
+
+
