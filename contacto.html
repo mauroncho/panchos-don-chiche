@@ -49,6 +49,8 @@
   <!-- <h2 class="h2_subtitulo">Contacta con nosotros y habla con Don Chiche</h2> -->
   <form action="" method="post" id="form">
     <div class="formulario">
+
+    <div class="form-input">
     <label for="Nombre"hidden>Nombre</label>
      <input type="text" 
       name="Nombre" 
@@ -56,7 +58,10 @@
       placeholder="Ingrese su nombre aqui... " 
       style="margin: 10px;  width: 400px; height: 30px;"
      >
-
+     <div class="form-aceptado" id="aceptado"><i class="fa-solid fa-check"></i></div>
+     <div class="form-error" id="error"><i class="fa-solid fa-circle-xmark"></i></div>
+    </div>
+    <div class="form-input">
     <label for="Apellido" hidden>Apellido</label>
     <input type="text" 
      name="Apellido" 
@@ -64,7 +69,10 @@
      placeholder="Ingrese su Apellido aqui..." 
      style="margin: 10px;  width: 400px; height: 30px;"
     >
-
+    <div class="form-aceptado" id="aceptado"><i class="fa-solid fa-check"></i></div>
+    <div class="form-error" id="error"><i class="fa-solid fa-circle-xmark"></i></div>
+    </div>
+    <div class="form-input">
     <label for="email" hidden>email</label>
     <input 
      type="email" 
@@ -73,7 +81,10 @@
      placeholder="Ingrese su email aqui..." 
     style="margin: 10px; width: 400px; height: 30px;"
     >
-
+    <div class="form-aceptado" id="aceptado"><i class="fa-solid fa-check"></i></div>
+    <div class="form-error" id="error"><i class="fa-solid fa-circle-xmark"></i></div>
+    </div>
+    <div class="form-input">
     <label for="Codigo Postal" hidden>Codigo Postal</label>
     <input type="text" 
      name="Codigo Postal" 
@@ -81,6 +92,9 @@
      placeholder="Codigo Postal" 
      style="margin: 10px; width: 400px; height: 30px;" 
     >
+    <div class="form-aceptado" id="aceptado"><i class="fa-solid fa-check"></i></div>
+    <div class="form-error" id="error"><i class="fa-solid fa-circle-xmark"></i></div>
+    </div>
     </div>
 
     <h3 class="h3_escuchaste">¿Donde escuchaste de nosotros?</h3>

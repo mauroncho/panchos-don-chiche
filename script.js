@@ -29,38 +29,54 @@ const apellido = document.getElementById ('Apellido')
 const email = document.getElementById('email')
 const CodigoPostal = document.getElementById('Codigo Postal')
 
-
 Formulario.addEventListener('submit', (e) =>{
 
   e.preventDefault();
 
  if (!Validacion.test(nombre.value) || !nombre.value.trim()){
   console.log('formato no valido')
-  alert('error en el nombre')
+  MostrarError()
   return
+ }else{
+  Aceptado()
  }
 
 if(!Validacion.test(apellido.value) || !apellido.value.trim()){
   console.log('formato no valido')
-  alert('error en el apellido')
+  MostrarError()
   return
-}
+}else{
+  Aceptado()
+ }
 
   if(!ValidacionEmail.test(email.value) || !email.value.trim()){
     console.log('Formato no valido')
-    alert('mail no valido')
+    MostrarError()
     return
-  }
+  }else{
+    Aceptado()
+   }
 
   if(!ValidacionCodigoPostal.test(CodigoPostal.value) || !CodigoPostal.value.trim()){
     console.log('Formato no valido')
-    alert('codigo postal incorrecto')
+    MostrarError()
     return
-  }
+  }else{
+    Aceptado()
+   }
 
   console.log('Formulario Enviado')
-  alert('Formulario Enviado')
 })
+
+function MostrarError(){
+  document.getElementById('error').style.display = 'block';
+}
+
+function Aceptado(){
+  document.getElementById('aceptado').style.display = 'block';
+}
+
+
 
 
 
