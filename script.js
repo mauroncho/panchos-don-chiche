@@ -69,14 +69,19 @@ if(!Validacion.test(apellido.value) || !apellido.value.trim()){
 })
 
 function MostrarError(){
-  document.getElementById('error').style.display = 'block';
-  document.getElementById('aceptado').style.display = 'none';
+  let error = document.querySelectorAll('.form-error')
+ // document.querySelectorAll('.form-error').style.display = 'block';
+  let aceptada = document.querySelectorAll('.form-aceptado')
+  console.log (error , aceptada)
 }
 
 function Aceptado(){
-  document.getElementById('aceptado').style.display = 'block';
-  document.getElementById('error').style.display = 'none';
+  let aceptado = document.querySelectorAll('.form-aceptado').style.display = 'block';
+  //document.querySelectorAll('.form-aceptado').style.display = 'block';
+  document.querySelectorAll('.form-error').style.display = 'none';
 }
+
+
 
 
 
