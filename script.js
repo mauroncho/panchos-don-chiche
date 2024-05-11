@@ -70,10 +70,12 @@ if(!Validacion.test(apellido.value) || !apellido.value.trim()){
 
 function MostrarError(){
   document.getElementById('error').style.display = 'block';
+  document.getElementById('aceptado').style.display = 'none';
 }
 
 function Aceptado(){
   document.getElementById('aceptado').style.display = 'block';
+  document.getElementById('error').style.display = 'none';
 }
 
 
