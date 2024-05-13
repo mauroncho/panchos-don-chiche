@@ -504,18 +504,21 @@ label {
   position: relative;
 }
 
+
 .form-error{
-  position: absolute;
+  position: relative;
   display: none;
-  bottom: 1em;
-  right: 1rem;
+  bottom: 2.3em;
+  left: 24.7em;
+  right: 1em;
   color: #740000;
 }
 
 .form-aceptado{
-  position: absolute;
+  position: relative;
   display: none;
-  bottom: 1em;
+  bottom: 2.3em;
+  left: 24.7em;
   right: 1rem;
   color: #0c470f;
 }
