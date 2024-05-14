@@ -17,72 +17,66 @@ navToggle.addEventListener("click", () => {
 
 //validacion de formulario
 
-let Validacion = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
-let ValidacionEmail =
-  /^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$/;
-let ValidacionCodigoPostal = /^[0-9]+$/;
-
 const Formulario = document.getElementById("form");
+const inputs = document.querySelectorAll(".formulario input");
 const nombre = document.getElementById("Nombre");
 const apellido = document.getElementById("Apellido");
 const email = document.getElementById("email");
 const CodigoPostal = document.getElementById("Codigo Postal");
 
+const expresiones = {
+  Validacion: /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/,
+  ValidacionEmail:
+    /^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$/,
+  ValidacionCodigoPostal: /^[0-9]+$/,
+};
+
 Formulario.addEventListener("submit", (e) => {
   e.preventDefault();
-
-  if (!Validacion.test(nombre.value) || !nombre.value.trim()) {
-    console.log("formato no valido");
-    MostrarError();
-    return;
-  } else {
-    Aceptado();
-  }
-
-  if (!Validacion.test(apellido.value) || !apellido.value.trim()) {
-    console.log("formato no valido");
-    MostrarError();
-    return;
-  } else {
-    Aceptado();
-  }
-
-  if (!ValidacionEmail.test(email.value) || !email.value.trim()) {
-    console.log("Formato no valido");
-    MostrarError();
-    return;
-  } else {
-    Aceptado();
-  }
-
-  if (
-    !ValidacionCodigoPostal.test(CodigoPostal.value) ||
-    !CodigoPostal.value.trim()
-  ) {
-    console.log("Formato no valido");
-    MostrarError();
-    return;
-  } else {
-    Aceptado();
-  }
-
-  console.log("Formulario Enviado");
 });
 
-function MostrarError(inputId) {
-  let selectedInput = document.getElementById(inputId);
-  if (!Validacion.test(nombre.value) || !nombre.value.trim()) {
-    selectedInput.classList.add("form-error");
-    console.log("formato no valido");
-    // MostrarError();
-    return;
-  } else {
-    selectedInput.classList.add("form-aceptado");
-    // Aceptado();
+const ValidarFormulario = (e) => {
+  switch (e.target.name) {
+    case "Nombre":
+      ValidarCampo(expresiones.Validacion, e.target, "Nombre");
+      break;
+    case "Apellido":
+      ValidarCampo(expresiones.Validacion, e.target, "Apellido");
+      break;
+    case "email":
+      ValidarCampo(expresiones.ValidacionEmail, e.target, "email");
+      break;
+    case "Codigo Postal":
+      ValidarCampo(
+        expresiones.ValidacionCodigoPostal,
+        e.target,
+        "Codigo Postal"
+      );
+      break;
   }
-  // document.getElementById('error').style.display = 'block';
+};
+
+const ValidarCampo = (expresion, input, campo) => {
+  if (!expresion.test(input.value) || !input.value.trim()) {
+    document.getElementById("error").style.display = "block";
+    document.getElementById("aceptado").style.display = "none";
+  } else {
+    document.getElementById("aceptado").style.display = "block";
+    document.getElementById("error").style.display = "none";
+  }
+};
+
+inputs.forEach((input) => {
+  input.addEventListener("keyup", ValidarFormulario);
+  input.addEventListener("blur", ValidarFormulario);
+});
+
+function MostrarError() {
+  document.getElementById("error").style.display = "block";
+  document.getElementById("aceptado").style.display = "none";
 }
 
 function Aceptado() {
   document.getElementById("aceptado").style.display = "block";
+  document.getElementById("error").style.display = "none";
 }

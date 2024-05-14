@@ -497,17 +497,19 @@ label {
 }
 
 .form-error {
-  position: absolute;
-  display: block;
-  bottom: 1em;
-  right: 1rem;
+  position: relative;
+  display: none;
+  bottom: 2.3em;
+  left: 24.7em;
+  right: 1em;
   color: #740000;
 }
 
 .form-aceptado {
-  position: absolute;
-  display: block;
-  bottom: 1em;
+  position: relative;
+  display: none;
+  bottom: 2.3em;
+  left: 24.7em;
   right: 1rem;
   color: #0c470f;
 }
