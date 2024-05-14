@@ -417,8 +417,12 @@ h1 {
   align-items: center;
   /* flex-wrap: wrap; */
   gap: 24px;
-  max-width: 60%;
+  max-width: 50%;
   margin: 16px auto;
+}
+
+form h4 {
+  font-size: 1.2em;
 }
 /* input {
   font-family: "Poppins";
@@ -432,7 +436,7 @@ h1 {
 } */
 
 #form {
-  max-width: 60%;
+  max-width: 50%;
   margin: 16px auto;
   color: rgba(0, 0, 0, 0.89);
 }
