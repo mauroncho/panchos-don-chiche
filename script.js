@@ -16,11 +16,7 @@ navToggle.addEventListener("click", () => {
 });
 
 //VALIDACIÓN FORMULARIO
-// const validacionNombre = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
-// const validacionEmail =
-//   /^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2, 15})$/;
-// const validacionCodigoPostal = /^[0-9]+$/;
-
+const validacionNombre = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
 const btnEnviar = document.getElementById("form-submit");
 const contactoForm = document.getElementById("form");
 const userName = document.getElementById("floatingName");
@@ -28,7 +24,7 @@ const userLastName = document.getElementById("floatingApellido");
 const userMail = document.getElementById("floatingEmail");
 
 btnEnviar.addEventListener("click", () => {
-  if (userName.value == 0) {
+  if (userName.value == 0 || !validacionNombre.test(userName.value)) {
     userName.classList.add("is-invalid");
     alert("Nombre es obligatorio");
     userName.focus();
@@ -38,7 +34,7 @@ btnEnviar.addEventListener("click", () => {
     userName.classList.add("is-valid");
   }
   // Validar apellido
-  if (userLastName.value == "") {
+  if (userLastName.value == "" ||  !validacionNombre.test(userLastName.value)) {
     userLastName.classList.add("is-invalid");
     alert("Apellido es obligatorio");
     document.formulario.apellido.focus();
