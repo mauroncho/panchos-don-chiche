@@ -326,7 +326,7 @@ h1 {
 .P-links h4 {
   font-size: 15px;
   color: #ffffff;
-  margin-bottom: 2px;
+  margin-bottom: 8px;
   font-weight: 500px;
   border-bottom: 2px solid #f0f2b6;
   padding-bottom: 0px;
@@ -337,15 +337,16 @@ h1 {
   text-decoration: none;
   color: #ffffff;
   display: inline-block;
+  padding: 0.4em;
   margin-bottom: 15px;
   transition: all 0.3s ease;
 }
 .conta {
-  max-width: 1500px;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin: 1.5em 0;
 }
 .P-links ul li a:hover {
-  padding-left: 6px;
   background-color: chocolate;
 }
 .social-link a {
